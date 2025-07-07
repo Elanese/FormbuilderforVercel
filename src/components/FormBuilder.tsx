@@ -188,10 +188,7 @@ await fetch("https://script.google.com/macros/s/https://databasecollection.netli
     console.error('Error saving form:', error);
   } finally {
     // cleanup
-  }
-}
-
-      setIsLoading(false);
+     setIsLoading(false);
     }
   };
 
