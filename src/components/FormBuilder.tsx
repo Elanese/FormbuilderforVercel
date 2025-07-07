@@ -181,11 +181,14 @@ await fetch("https://script.google.com/macros/s/https://databasecollection.netli
       await googleApi.updateForm(currentFormId, requests);
       
       if (onSave) {
-        onSave(currentFormId);
-      }
-    } catch (error) {
-      console.error('Error saving form:', error);
-    } finally {
+        try {
+  // some logic
+  onSave(currentFormId);
+} catch (error) {
+  console.error('Error saving form:', error);
+} finally {
+  // cleanup
+}
       setIsLoading(false);
     }
   };
