@@ -414,9 +414,11 @@ await fetch("https://script.google.com/macros/s/https://databasecollection.netli
             <p className="text-sm">Click "Add Question" or "Add Client Info Template" to get started</p>
           </div>
         )}
-      </div>
+           </div>
     </div>
   );
 };
+
+export default FormBuilder;
 
 export default FormBuilder;
